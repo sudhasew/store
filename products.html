@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>ALL PRODUCTS-MY STORE</title>
+    <link rel="stylesheet" href="mystore.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="mystore.html">
+            <img src="Assets/logo.jpg" alt="logo" width="125px"
+          /></a>
+        </div>
+        <nav>
+          <ul id="menuItems">
+            <li><a href="mystore.html"> Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="productdetails.html">About Product</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="cashAccount.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"
+          ><img
+            src="Assets/cart.png"
+            width="30px"
+            height="30px"
+            style="cursor: pointer"
+        /></a>
+        <img
+          src="Assets/menu.png"
+          alt="menu"
+          class="menu-icon"
+          onclick="menutoggle()"
+        />
+      </div>
+    </div>
+
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>All Products</h2>
+        <select>
+          <option>Default sorting</option>
+          <option>Sort by price</option>
+          <option>Sort by popularity</option>
+          <option>Sort by rating</option>
+          <option>Sort by sale</option>
+        </select>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img src="Assets/crossbody2.jpeg" alt="bag" />
+          <h4>Crossbody Bag</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$45.00</p>
+        </div>
+        <div class="col-4">
+          <img src="Assets/crossbodybag.jpeg" alt="bag" />
+          <h4>crossbody Bag</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$40.00</p>
+        </div>
+        <div class="col-4">
+          <img src="Assets/backpack.jpeg" alt="bag" />
+          <h4>Backpacks</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="Assets/greenbag.jpeg" alt="bag" />
+          <h4>Green Bag</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$40.00</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img src="Assets/zippersbag.jpeg" alt="bag" />
+          <h4>3-Zipper Bag</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$45.00</p>
+        </div>
+        <div class="col-4">
+          <img src="Assets/catsbag.jpeg" alt="bag" />
+          <h4>Cats Printed Backpack</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="Assets/bluebackpack.jpeg" alt="bag" />
+          <h4>Blue backpack</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="Assets/Polkadots.jpeg" alt="bag" />
+          <h4>Polkadots Printed Bag</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$40.00</p>
+        </div>
+        <div class="col-4">
+          <img src="Assets/sunshine1.jpeg" alt="bag" />
+          <h4>Sunshine Bag</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$30.00</p>
+        </div>
+        <div class="col-4">
+          <img src="Assets/sunshine2.jpeg" alt="bag" />
+          <h4>Sunshine Bag</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>$30.00</p>
+        </div>
+        <div class="col-4">
+          <img src="Assets/BlueLuggageBag.jpeg" alt="bag" />
+          <h4>Luggage Bag</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$40.00</p>
+        </div>
+        <div class="col-4">
+          <img src="Assets/Canvas Backpack.jpeg" alt="bag" />
+          <h4>Canvas Backpack</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$40.00</p>
+        </div>
+      </div>
+      <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#10170;</span>
+      </div>
+    </div>
+  </body>
+</html>

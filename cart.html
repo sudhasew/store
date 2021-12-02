@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>ALL PRODUCTS Details-MY STORE</title>
+    <link rel="stylesheet" href="mystore.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="mystore.html">
+            <img src="Assets/logo.jpg" alt="logo" width="125px"
+          /></a>
+        </div>
+        <nav>
+          <ul id="menuItems">
+            <li><a href="mystore.html"> Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="productdetails.html">About Product</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="cashAccount.html">Account</a></li>
+          </ul>
+        </nav>
+        <img
+          src="Assets/cart.png"
+          width="30px"
+          height="30px"
+          style="cursor: pointer"
+        />
+        <img
+          src="Assets/menu.png"
+          alt="menu"
+          class="menu-icon"
+          onclick="menutoggle()"
+        />
+      </div>
+    </div>
+    <section class="container content-section">
+      <h2 class="section-header"></h2>
+      <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">Lotus printed</span>
+          <img class="shop-item-image" src="Assets/category1.jpg" width="75" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$39.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Pink Bag</span>
+          <img class="shop-item-image" src="Assets/category2.jpg" width="75" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$70.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Luggage Bag</span>
+          <img class="shop-item-image" src="Assets/category3.jpeg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$50.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="shop-item">
+          <span class="shop-item-title">Travel Bag</span>
+          <img class="shop-item-image" src="Assets/category4.jpeg" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">$44.99</span>
+            <button class="btn btn-primary shop-item-button" type="button">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------------- Cart items details  ------------->
+    <section class="container content-section">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total:</strong>
+        <span class="cart-total-price">$0</span>
+      </div>
+      <button class="btn btn-primary btn-purchase" type="button">
+        PURCHASE
+      </button>
+    </section>
+    <script src="mystore.js"></script>
+  </body>
+</html>
