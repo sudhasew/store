@@ -165,7 +165,7 @@ h4 {
 /********** cashAccount details ***********/
 
 .payment {
-  background-color: #addeee;
+  background: radial-gradient(white, pink);
   border: 2px solid #ff523b;
   max-width: 450px;
   margin: 80px auto;
@@ -240,11 +240,18 @@ i.fas.fa-lock {
 .account-btn {
   margin-top: 40px;
   background-color: #ff523b;
+  border: 1px solid white;
   padding: 12px;
   text-align: center;
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
+}
+.account-btn button {
+  border: none;
+  background-color: #ff523b;
+  color: white;
+  font-size: 1rem;
 }
 .payment-logo {
   position: absolute;
@@ -266,7 +273,7 @@ i.fas.fa-lock {
   left: 5px;
   width: 90px;
   height: 90px;
-  background-color: #2196f3;
+  background-color: #ff523b;
   border-radius: 50%;
 }
 .payment-logo p {
