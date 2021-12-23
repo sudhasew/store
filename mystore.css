@@ -3,6 +3,9 @@
   box-sizing: border-box;
   padding: 0;
 }
+.my-logo {
+  width: 125px;
+}
 html,
 body {
   margin: 0;
@@ -281,7 +284,42 @@ i.fas.fa-lock {
   position: relative;
   font-size: 58px;
 }
+::placeholder {
+  font-size: 1.2rem;
+}
+.wrapper {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  box-sizing: border-box;
+}
+.input-fields input {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 20px 200px 20px 0;
+  width: 100%;
+}
+textarea {
+  display: flex;
+  padding: 15px 50px 10px 0;
+  width: 100%;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  width: 50%;
+}
 @media only screen and (max-width: 800px) {
+  .my-logo {
+    width: 40px;
+  }
+  /* img#productImg {
+    width: 400px;
+  } */
   nav ul {
     position: absolute;
     top: 60px;
@@ -303,6 +341,9 @@ i.fas.fa-lock {
   .menu-icon {
     display: block;
     cursor: pointer;
+  }
+  #menuItems {
+    z-index: 1;
   }
 }
 
@@ -580,7 +621,36 @@ input:focus {
   /* flex-wrap: wrap; */
   justify-content: space-around;
 }
+::placeholder {
+  font-size: 1rem;
+}
+.wrapper {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  box-sizing: border-box;
+}
+.input-fields input {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5px;
+  padding: 10px 100px 10px 0;
+}
+textarea {
+  display: flex;
+  padding: 10px 50px 10px 0;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
 @media only screen and (max-width: 600px) {
+  .my-logo {
+    width: 40px;
+  }
   .row {
     text-align: center;
   }

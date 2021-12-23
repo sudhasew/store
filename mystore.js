@@ -1,11 +1,15 @@
 var menuItems = document.getElementById("menuItems");
+const menuIcon = document.querySelector(".menu-icon");
 menuItems.style.maxHeight = "0px";
 function menutoggle() {
   if (menuItems.style.maxHeight == "0px") {
     menuItems.style.maxHeight = "200px";
   } else {
     menuItems.style.maxHeight = "0px";
+    menuItems.classList.toggle("menuIcon");
   }
+
+  // menuItems.classList.remove("");
 }
 if (document.readyState == "loading") {
   document.addEventListener("DOMContentLoaded", ready);
@@ -30,9 +34,11 @@ function ready() {
     var button = addToCartButtons[i];
     button.addEventListener("click", addToCartClicked);
   }
-  document
-    .getElementsByClassName("btn-purchase")[0]
-    .addEventListener("click", purchaseClicked);
+  if (document.getElementsByClassName("btn-purchase")[0]) {
+    document
+      .getElementsByClassName("btn-purchase")[0]
+      .addEventListener("click", purchaseClicked);
+  }
 }
 function purchaseClicked() {
   alert("Thank you for your purchase");

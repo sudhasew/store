@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>MY STORE</title>
+    <link rel="stylesheet" href="mystore.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="mystore.html">
+              <img class="my-logo" src="Assets/logo.jpg" width="125px"
+            /></a>
+          </div>
+          <nav>
+            <ul id="menuItems">
+              <li><a href="mystore.html"> Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="productdetails.html">About Product</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="cashAccount.html">Account</a></li>
+            </ul>
+          </nav>
+
+          <a href="cart.html">
+            <img
+              src="Assets/cart.png"
+              width="30px"
+              height="30px"
+              style="cursor: pointer"
+          /></a>
+          <img
+            src="Assets/menu.png"
+            alt="menu"
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+    <div class="wrapper">
+      <div class="contact-form">
+        <div class="input-fields">
+          <input type="text" class="input" placeholder="Name" />
+          <input type="text" class="input" placeholder="Email Address" />
+          <input type="text" class="input" placeholder="Phone" />
+          <input type="text" class="input" placeholder="Subject" />
+        </div>
+        <div class="msg">
+          <textarea placeholder="Message"></textarea>
+          <div class="btn">Send</div>
+        </div>
+      </div>
+    </div>
+    <script src="mystore.js"></script>
+  </body>
+</html>
